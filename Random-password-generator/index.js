@@ -8,6 +8,7 @@ const specials = ["~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=
 
 const charDic = {'cap_char':cap_char, 'low_char': low_char, 'nums': nums, 'specials': specials}
 let lengthEl = document.getElementById("lengthEl")
+let alertEl = document.getElementById("copyAlertEl")
 let sliderEl = document.getElementById("myRange")
 let r1El = document.getElementById("r1_el")
 let r2El = document.getElementById("r2_el")
@@ -50,6 +51,7 @@ function randomChar(specFlag){
 }
 
 function generate(){
+    alertEl.textContent = ""
     p1 = ""
     p2 = ""
     for (i=0; i<len; i++){
@@ -82,9 +84,10 @@ function copy(str){
     } else {
         clipboard.writeText(copyText.textContent).then(function() {
             console.log('Copied to clipboard successfully!');
+            alertEl.textContent = "password copied!"
         }, function() {
             console.error('Unable to write to clipboard. :-(');
         });
     }
-    // navigator.clipboard.writeText();
+    
 }

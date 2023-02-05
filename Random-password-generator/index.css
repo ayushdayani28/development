@@ -230,3 +230,8 @@ border-radius: 6px;
     width: 60px;
     height: 30px;
 }
+
+#copyAlertEl{
+    top: 450px;
+    left: 260px;
+}
