@@ -7,8 +7,11 @@ const nums = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9",]
 const specials = ["~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?","/"]
 
 const charDic = {'cap_char':cap_char, 'low_char': low_char, 'nums': nums, 'specials': specials}
-
+let lengthEl = document.getElementById("lengthEl")
 let sliderEl = document.getElementById("myRange")
+let r1El = document.getElementById("r1_el")
+let r2El = document.getElementById("r2_el")
+let specEl = document.getElementById("specEl")
 let len = sliderEl.value
 let specFlag = false
 let p1 = ""
@@ -17,14 +20,17 @@ let p2 = ""
 function spec(){
     if (specFlag){
         specFlag = false
+        specEl.textContent = "Click for Special Characters"
     } else{
         specFlag = true
+        specEl.textContent = "Click for No Special Characters"
     }
 }
 
 sliderEl.oninput = function() {
   len = sliderEl.value
 //   console.log(length)
+  lengthEl.textContent = len
 }
 
 function randomNum(end){
@@ -52,5 +58,33 @@ function generate(){
     for (i=0; i<len; i++){
         p2+=randomChar(specFlag)
     }
-    console.log(p1+ "  " +p2)
+    if (p1.length > 20){
+        r1El.textContent = p1.slice(0,20)+"..."
+        r2El.textContent = p2.slice(0,20)+"..."
+    } else{
+        r1El.textContent = p1
+        r2El.textContent = p2
+    }
+}
+
+function reset(){
+    r1El.textContent = "Password One"
+    r2El.textContent = "Password Two"
+}
+
+function copy(str){
+    var copyText = document.getElementById(str);
+    console.log(typeof copyText.textContent)
+    // 
+    var clipboard = navigator.clipboard;
+    if (clipboard == undefined) {
+        console.log('clipboard is undefined');
+    } else {
+        clipboard.writeText(copyText.textContent).then(function() {
+            console.log('Copied to clipboard successfully!');
+        }, function() {
+            console.error('Unable to write to clipboard. :-(');
+        });
+    }
+    // navigator.clipboard.writeText();
 }
