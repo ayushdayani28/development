@@ -101,7 +101,7 @@ color: #D5D4D8;
 } */
 .slider {
   position: absolute;
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   width: 15%;
   height: 5px;
   left: 62px;
@@ -135,7 +135,7 @@ color: #D5D4D8;
 }
 
 .slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   width: 15px;
   height: 15px;
   border-radius: 50%; 
