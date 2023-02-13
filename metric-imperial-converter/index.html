@@ -1,10 +1,17 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <head>
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
         <div id='container'>
+            
             <div id="main">
+                <div class="switch">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round"></div>
+                    </label>
+                </div>
                 <h1 id="conv-head">Metric/Imperial Unit Conversion</h1>
                 <input class="form" id="input-space" value="50" >
                 <button id="convert">Convert</button>
