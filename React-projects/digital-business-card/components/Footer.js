@@ -2,13 +2,21 @@ import React from 'react'
 
 export default function Footer(){
     return(
-        // <div className='footer'>
         <footer className='footer'>
-            <i className="fa fa-github" aria-hidden="true"></i>
-            <i className="fa fa-twitter" aria-hidden="true"></i>
-            <i className="fa fa-instagram" aria-hidden="true"></i>
-            <i className="fa fa-facebook" aria-hidden="true"></i>
+            <button onClick={() => openInNewTab('https://github.com/ayushdayani28','link')}><i className="fa fa-github" aria-hidden="true"></i></button>
+            <button onClick={() => openInNewTab('https://twitter.com/ad2898_dayani','link')}><i className="fa fa-twitter" aria-hidden="true"></i></button>
+            <button onClick={() => openInNewTab('https://www.instagram.com/iamayushdayani/','link')}><i className="fa fa-instagram" aria-hidden="true"></i></button>
+            <button onClick={() => openInNewTab('https://www.facebook.com/ayush.dayani.9','link')}><i className="fa fa-facebook" aria-hidden="true"></i></button>
         </footer>
-        // </div>
     )
 }
+
+const openInNewTab = (url, type) => {
+    if (type==='link'){
+        window.open(url, '_blank', 'noreferrer');
+    } else if (type==='mail'){
+        url = 'mailto:'+url;
+        window.open(url, 'Mailer', '_blank');
+    }
+};
+

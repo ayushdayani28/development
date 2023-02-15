@@ -504,7 +504,7 @@ function Bio() {
         _react2.default.createElement(
             'p',
             { className: 'bio-desc' },
-            'I am a frontend developer with a particular interest in making things simple and automating daily tasks. I try to keep up with security and best practices, and am always looking for new things to learn.'
+            'I am a Software Developer with a particular interest in Big Data and Machine Learning. I try to keep up with latest tools and best practices, and am always looking for new things to learn.'
         ),
         _react2.default.createElement(
             'h1',
@@ -540,20 +540,48 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Footer() {
-    return (
-        // <div className='footer'>
+    return _react2.default.createElement(
+        'footer',
+        { className: 'footer' },
         _react2.default.createElement(
-            'footer',
-            { className: 'footer' },
-            _react2.default.createElement('i', { className: 'fa fa-github', 'aria-hidden': 'true' }),
-            _react2.default.createElement('i', { className: 'fa fa-twitter', 'aria-hidden': 'true' }),
-            _react2.default.createElement('i', { className: 'fa fa-instagram', 'aria-hidden': 'true' }),
+            'button',
+            { onClick: function onClick() {
+                    return openInNewTab('https://github.com/ayushdayani28', 'link');
+                } },
+            _react2.default.createElement('i', { className: 'fa fa-github', 'aria-hidden': 'true' })
+        ),
+        _react2.default.createElement(
+            'button',
+            { onClick: function onClick() {
+                    return openInNewTab('https://twitter.com/ad2898_dayani', 'link');
+                } },
+            _react2.default.createElement('i', { className: 'fa fa-twitter', 'aria-hidden': 'true' })
+        ),
+        _react2.default.createElement(
+            'button',
+            { onClick: function onClick() {
+                    return openInNewTab('https://www.instagram.com/iamayushdayani/', 'link');
+                } },
+            _react2.default.createElement('i', { className: 'fa fa-instagram', 'aria-hidden': 'true' })
+        ),
+        _react2.default.createElement(
+            'button',
+            { onClick: function onClick() {
+                    return openInNewTab('https://www.facebook.com/ayush.dayani.9', 'link');
+                } },
             _react2.default.createElement('i', { className: 'fa fa-facebook', 'aria-hidden': 'true' })
         )
-        // </div>
-
     );
 }
+
+var openInNewTab = function openInNewTab(url, type) {
+    if (type === 'link') {
+        window.open(url, '_blank', 'noreferrer');
+    } else if (type === 'mail') {
+        url = 'mailto:' + url;
+        window.open(url, 'Mailer', '_blank');
+    }
+};
 
 /***/ }),
 /* 8 */
@@ -594,18 +622,31 @@ function Info() {
         ),
         _react2.default.createElement(
             "button",
-            { className: "contact", id: "email" },
+            { className: "contact", id: "email", onClick: function onClick() {
+                    return openInNewTab('adayani@cs.stonybrook.edu', 'mail');
+                }, target: "_blank" },
             _react2.default.createElement("i", { className: "fa fa-envelope", "aria-hidden": "true" }),
             "\xA0\xA0\xA0email"
         ),
         _react2.default.createElement(
             "button",
-            { className: "contact", id: "linkedin" },
+            { className: "contact", id: "linkedin", onClick: function onClick() {
+                    return openInNewTab('https://www.linkedin.com/in/28ayush', 'link');
+                } },
             _react2.default.createElement("i", { className: "fa fa-linkedin", "aria-hidden": "true" }),
             "\xA0\xA0\xA0Linkedin"
         )
     );
 }
+
+var openInNewTab = function openInNewTab(url, type) {
+    if (type === 'link') {
+        window.open(url, '_blank', 'noreferrer');
+    } else if (type === 'mail') {
+        url = 'mailto:' + url;
+        window.open(url, 'Mailer', '_blank');
+    }
+};
 
 /***/ }),
 /* 9 */
