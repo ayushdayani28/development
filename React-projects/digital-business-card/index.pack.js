@@ -545,28 +545,28 @@ function Footer() {
         { className: 'footer' },
         _react2.default.createElement(
             'button',
-            { onClick: function onClick() {
+            { className: 'footerButtons', onClick: function onClick() {
                     return openInNewTab('https://github.com/ayushdayani28', 'link');
                 } },
             _react2.default.createElement('i', { className: 'fa fa-github', 'aria-hidden': 'true' })
         ),
         _react2.default.createElement(
             'button',
-            { onClick: function onClick() {
+            { className: 'footerButtons', onClick: function onClick() {
                     return openInNewTab('https://twitter.com/ad2898_dayani', 'link');
                 } },
             _react2.default.createElement('i', { className: 'fa fa-twitter', 'aria-hidden': 'true' })
         ),
         _react2.default.createElement(
             'button',
-            { onClick: function onClick() {
+            { className: 'footerButtons', onClick: function onClick() {
                     return openInNewTab('https://www.instagram.com/iamayushdayani/', 'link');
                 } },
             _react2.default.createElement('i', { className: 'fa fa-instagram', 'aria-hidden': 'true' })
         ),
         _react2.default.createElement(
             'button',
-            { onClick: function onClick() {
+            { className: 'footerButtons', onClick: function onClick() {
                     return openInNewTab('https://www.facebook.com/ayush.dayani.9', 'link');
                 } },
             _react2.default.createElement('i', { className: 'fa fa-facebook', 'aria-hidden': 'true' })
@@ -665,6 +665,8 @@ var _react = __webpack_require__(0);
 var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// import profilePic from "../images/pp.jpg"
 
 function Profile() {
     return _react2.default.createElement(
