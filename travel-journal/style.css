@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+#container{
+    /* margin: 10px; */
+    border-radius: 5px;
+    /* background: #EBF3F4; */
+}
+
+#heading{
+    display: flex;
+    height: 55px;
+    min-width: 550px;
+    justify-content: center; 
+    background: #F55A5A;
+    color: white;
+    margin-bottom: 40px;
+}
+
+#heading > h1{
+    display: flex;
+    padding-top:10px;
+    
+    /* text */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.4608px;
+    line-height: 18px;
+    letter-spacing: -0.075em;
+
+    color: #FFFFFF;
+}
+
+#heading i{
+    display:flex;
+    padding-top: 17px;
+}
+
+.card{
+    width: 471px;
+    height: 168px;
+    font-size: 12px;
+    flex: 0 0 auto;         /* ADD */
+    display: flex;          /* ADD */
+    flex-direction: row;    /* ADD */
+    margin: 0px auto 36px;
+    position: relative;  
+}
+
+.card--image{
+    display: flex;
+    object-fit: cover;
+    width: 125px;
+    height: 168px;
+    border-radius: 5px;
+    margin-bottom: 9px;
+}
+
+
+#im_Loc{
+    display: flex;
+    margin-top: 5px;
+}
+
+.marker{
+    display:flex;
+    margin-left:20px;
+}
+
+#location{
+    display: flex;
+    /* flex-direction: column; */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 12px;
+    letter-spacing: 0.17em;
+
+    color: #2B283A;
+    margin: 0px 12px 0px 2px;
+}
+
+#gLink{
+    display: flex;
+    margin: 0px 10px; 
+    height:13px;
+    width:106px;
+    
+    /* text */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 12px;
+    /* identical to box height */
+
+    text-decoration-line: underline;
+
+    color: #918E9B;
+}
+
+#details{
+    display: block;
+    margin-left: 20px;
+}
+
+#place{
+    width: 326px;
+    /* height: 40px; */
+    margin-bottom:15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+
+    color: #2B283A;
+}
+
+#duration{
+    width: 319px;
+    /* height: 11px; */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10.24px;
+    line-height: 12px;
+
+    color: #2B283A;
+}
+
+#desc{
+    width: 326px;
+    height: 45px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 150%;
+    /* or 15px */
+
+
+    color: #2B283A;
+}
