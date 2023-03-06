@@ -20,7 +20,7 @@ main {
   margin-top: 5%;
   padding-top: 20px;
   background-color: #F5F5F5;
-  height: 450px;
+  height: 550px;
   min-width: 500px;
   max-width: 800px;
   border-radius: 5px;
@@ -139,4 +139,17 @@ main {
 
 .fifth-face .column:nth-of-type(2) {
   justify-content: center;
+}
+
+
+.refresh{
+  height: 45px;
+  width: 60px;
+  border: none;
+  border-radius: 6px;
+  background-color: #5035FF;
+  color: white;
+  font-size: 0.7rem;
+  font-family: 'Karla', sans-serif;
+  cursor: pointer;
 }

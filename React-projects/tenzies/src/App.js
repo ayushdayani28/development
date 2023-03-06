@@ -7,8 +7,7 @@ export default function App() {
     const [rolls, setRolls] = React.useState(0)
     const [dice, setDice] = React.useState(allNewDice())
     const [tenzies, setTenzies] = React.useState(false)
-    // const latestRollsRef = React.useRef(null);
-    const [tp, setTop] = React.useState(null)
+    const [tp, setTop] = React.useState('')
 
     React.useEffect(() => {
         const allHeld = dice.every(die => die.isHeld)
@@ -17,12 +16,6 @@ export default function App() {
         if (allHeld && allSameValue) {
             setTenzies(true)
         }
-    }, [dice])
-    React.useEffect(() => {
-      setTop(localStorage.getItem('rolls'))
-        // if (tenzies===true){
-          
-        // }
     }, [dice])
 
     function generateNewDie() {
@@ -36,7 +29,7 @@ export default function App() {
     function allNewDice() {
 
         const newDice = []
-        for (let i = 0; i < 2; i++) {
+        for (let i = 0; i < 10; i++) {
             newDice.push(generateNewDie())
         }
         return newDice
@@ -69,7 +62,6 @@ export default function App() {
             value={die.value} 
             isHeld={die.isHeld} 
             holdDice={() => holdDice(die.id)}
-            counter={rollCounter}
         />
     ))
 
@@ -82,20 +74,19 @@ export default function App() {
         setTimeout(() => {
           let top = localStorage.getItem('rolls')
           if (top === null || top === 'null' || parseInt(top) > newRoll){
+            setTop(newRoll)
             localStorage.setItem('rolls', newRoll)
-            // latestRollsRef.current = newRoll;
-            // renderLatest()
           }
         })
         setRolls(0)
       }
     }
-    
-    // function renderLatest(){
-    //   const latestRolls = latestRollsRef.current ?? localStorage.getItem("rolls");
-    // return <h1>{latestRolls}</h1>;
-    // }
-    
+
+    function refresh(){
+      setTop("")
+      localStorage.removeItem('rolls')
+    }
+
     return (
         <main>
             {tenzies && <Confetti />}
@@ -105,6 +96,7 @@ export default function App() {
             <div className="dice-container">
                 {diceElements}
             </div>
+            
             <button 
                 className="roll-dice" 
                 onClick={() => {
@@ -116,6 +108,8 @@ export default function App() {
                 {tenzies ? "New Game" : "Roll"}
             </button>
             <h1>{tp}</h1>
+            <button className="refresh" onClick={refresh}>Refresh Game</button>
+            
         </main>
     )
 }
