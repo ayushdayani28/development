@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# To Try the App, click on https://cute-cobbler-1e01df.netlify.app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
