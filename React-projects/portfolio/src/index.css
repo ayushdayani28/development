@@ -28,6 +28,7 @@ body{
   /* transform:translateZ(0) translateX(0) rotateY(0deg); */
   min-height:100%;
   outline:30px solid #0f33ff;
+  overflow: hidden;
   /* transition:transform .4s; */
 }
 
@@ -38,10 +39,10 @@ body{
   overflow:hidden;
   z-index:1;
 }
-.perspective--modalview{position:fixed;perspective:1500px}
+.perspective--modalview{position:fixed;perspective:1500px;overflow:hidden;}
 
 .effect-rotate-left .container{
-  
+  overflow:hidden;
   transform-origin:0% 50%;
   /* for older versions use webkit transform */
   transition: transform .4s;
