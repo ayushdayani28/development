@@ -13,11 +13,14 @@ export default function Contact(props){
     return (
         <li className={`l-section section ${active}`}>
         <div className="contact">
+        {/* <div className="testing"> */}
           <div className="contact--lockup">
-          <Map />
-          <Socials />
-          <ContactForm />
-          
+            
+            
+            <Socials />
+            <ContactForm />
+            <Map />
+            {/* </div> */}
             {/* <div className="modal">
               <div className="modal--information">
                 <p>Pawia 5, 31-154 Kraków, Poland</p>
