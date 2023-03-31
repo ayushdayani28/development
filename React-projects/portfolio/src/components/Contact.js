@@ -1,3 +1,7 @@
+// import EmailContact from "./EmailContact"
+import Map from "./Map"
+import ContactForm from './ContactForm';
+import Socials from './Socials'
 
 export default function Contact(props){
   let active
@@ -10,7 +14,11 @@ export default function Contact(props){
         <li className={`l-section section ${active}`}>
         <div className="contact">
           <div className="contact--lockup">
-            <div className="modal">
+          <Map />
+          <Socials />
+          <ContactForm />
+          
+            {/* <div className="modal">
               <div className="modal--information">
                 <p>Pawia 5, 31-154 Kraków, Poland</p>
                 <a href="mailto:ouremail@gmail.com">ouremail@gmail.com</a>
@@ -21,7 +29,7 @@ export default function Contact(props){
                 <li><a href="#0">dribbble</a></li>
                 <li><a href="mailto:ouremail@gmail.com">Contact Us</a></li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </li>

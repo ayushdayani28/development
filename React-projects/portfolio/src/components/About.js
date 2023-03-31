@@ -1,6 +1,7 @@
 import React from 'react'
 import PixelatedImageReveal from './Pixelation'
 
+
 export default function About(props){
     let active
     if (props.active === 1){
@@ -9,9 +10,9 @@ export default function About(props){
         active = ""
     }
     let desc = [`My name is Ayush Dayani and I recently graduated with a Masters degree in Computer Science from Stony Brook University, New York, USA. I 
-                have experience in Web Development, Data Engineering and Machine Learning. I am actively seeking opportunities in Software development 
-                engineering and Data Science & Engineering. My passion for creative innovation and solving complex problems has developed through my experiences from 
-                various projects.`]
+                have experience in Web Development, Data Engineering and Machine Learning. My passion for creative innovation and solving complex problems 
+                has developed through my experiences from various projects that I built during academics and industry exposure. I am actively seeking 
+                opportunities in Software development engineering and Data Science & Engineering. `]
     let period = 50
     // console.log(elImage,'this')
     return(

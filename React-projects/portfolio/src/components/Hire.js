@@ -1,3 +1,4 @@
+import React from 'react'
 
 export default function Hire(props){
   let active
@@ -6,6 +7,8 @@ export default function Hire(props){
   } else {
       active = ""
   }
+
+  
     return(
         <li className={`l-section section ${active}`}>
           <div className="hire">
