@@ -16,6 +16,14 @@ export default function Socials(){
         setIsOpen(!isOpen);
         console.log('open')
     };
+    const openInNewTab = (url, type) => {
+        if (type==='link'){
+            window.open(url, '_blank', 'noreferrer');
+        } else if (type==='mail'){
+            url = 'mailto:'+url;
+            window.open(url, 'Mailer', '_blank');
+        }
+    };
     return(
         <div className="socials">
             <ul id="socials-menu" >       
@@ -23,7 +31,7 @@ export default function Socials(){
                 <a className="menu-button icon-minus" href="#0" title="Hide navigation" onClick={toggleMenu}></a>
                 <li className="menu-item">
                     <a href="#socials-menu">
-                        <FaGithub />
+                    <button className='footerButtons' onClick={() => openInNewTab('https://github.com/ayushdayani28','link')}><i className="fa fa-github" aria-hidden="true"></i></button>
                     </a>
                 </li>
                 <li className="menu-item">
