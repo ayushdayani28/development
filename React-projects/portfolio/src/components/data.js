@@ -243,4 +243,29 @@ const learn ={
     }
 }
 
-export {data, workEx, lang, certi, learn}
+const projects = [
+    {name:'Kedro', keywords:['python', 'AWS', 'kedro', 'hadoop', 'pyspark', 'docker', 'guidewire','sql', 'redshift','pipeline', 'data engineering', 'machine learning engineer','dag',]
+    ,desc:'', tech:['python', 'SQL', 'AWS', 'kedro', 'pyspark', 'hadoop', 'Redshift'], duration:'May/22 - Aug/22', association:'Guidewire Software', img:'', projectLink:''},
+
+    {name:'Poverty UN SDG', keywords:['python', 'Apache', 'GCP', 'google cloud platform', 'hadoop', 'pyspark', 'stony brook university SBU', 'pipeline', 'image processing', 'distributed tensorflow', 'ARIMA', 'data engineering', 'machine learning engineer','UN SDG united nations sustainable development goals poverty', 'prediction', 'time series analysis', 'analysis', 'GIS geographical information system', 'satellite image']
+    ,desc:'', tech:['python','pyspark', 'Apache Hadoop', 'GCP', 'Tensorflow', 'GIS', 'Tensorflow'], duration:'Apr/22 - May/22', association:'SBU: Big Data Analytics', img:'', projectLink:''},
+    
+    {name:'Bio-Medical Imaging', keywords:['Bio Medical Imaging','python', 'postgres', 'hadoop', 'spatial analysis', 'sql', 'redshift','pipeline', 'data engineering', 'machine learning engineer','dag',]
+    ,desc:'', tech:['python', 'postgres', 'kedro', 'pyspark', 'hadoop', 'Redshift'], duration:'May/22 - Aug/22', association:'Guidewire Software', img:'', projectLink:''},
+    
+    // {name:'Kedro', keywords:['python', 'AWS', 'kedro', 'hadoop', 'pyspark', 'docker', 'guidewire','sql', 'redshift','pipeline', 'data engineering', 'machine learning engineer','dag',]
+    // ,desc:'', tech:['python', 'SQL', 'AWS', 'kedro', 'pyspark', 'hadoop', 'Redshift'], duration:'May/22 - Aug/22', association:'Guidewire Software', img:'', projectLink:''},
+    
+    // {name:'Kedro', keywords:['python', 'AWS', 'kedro', 'hadoop', 'pyspark', 'docker', 'guidewire','sql', 'redshift','pipeline', 'data engineering', 'machine learning engineer','dag',]
+    // ,desc:'', tech:['python', 'SQL', 'AWS', 'kedro', 'pyspark', 'hadoop', 'Redshift'], duration:'May/22 - Aug/22', association:'Guidewire Software', img:'', projectLink:''},
+    
+    // {name:'Kedro', keywords:['python', 'AWS', 'kedro', 'hadoop', 'pyspark', 'docker', 'guidewire','sql', 'redshift','pipeline', 'data engineering', 'machine learning engineer','dag',]
+    // ,desc:'', tech:['python', 'SQL', 'AWS', 'kedro', 'pyspark', 'hadoop', 'Redshift'], duration:'May/22 - Aug/22', association:'Guidewire Software', img:'', projectLink:''},
+    
+    {name:'project1', keywords:['python', 'java', 'javascript', 'stony brook'], desc:'', tech:['python', 'java', 'javascript']},
+    {name:'project2', keywords:['python', 'SQL', 'javascript', 'Guidewire'], desc:'', tech:['python', 'SQL', 'javascript']},
+    {name:'project3', keywords:['python', 'SQL', 'react', 'GTU'], desc:'', tech:['python', 'SQL', 'react']},
+
+]
+
+export {data, workEx, lang, certi, learn, projects}

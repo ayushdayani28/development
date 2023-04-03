@@ -8,6 +8,7 @@ export default function Main(props){
     const [scrollAmount, setScrollAmount] = React.useState(0);
     const [isVis, setIsVis] = React.useState(0);
     const [showAnimation, setShowAnimation] = React.useState(false);
+    const [content, setContent] = React.useState(null);
 
     React.useEffect(()=>{
         if (isVis!==0){
@@ -70,7 +71,7 @@ export default function Main(props){
             return showAnimation ? `effect-rotate-left--animate` : '';
         } 
     }
-
+    
     // function reverseAnimate(view){
     //     if (view===0){
     //     return showAnimation ? `` : ''; }
@@ -102,10 +103,12 @@ export default function Main(props){
             <Search 
                 isVis={isVis}
                 setIsVis={setVis}
+                content={content}
             />
             <SearchBar
                 isVis={isVis}
                 setIsVis={setVis}
+                setContent={setContent}
             />
         </div>
     )
