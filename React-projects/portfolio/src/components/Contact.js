@@ -2,6 +2,7 @@
 import Map from "./Map"
 import ContactForm from './ContactForm';
 import Socials from './Socials'
+// import myResume from '../my-resume.pdf';
 
 export default function Contact(props){
   let active
@@ -10,29 +11,19 @@ export default function Contact(props){
   } else {
       active = ""
   }
+  const resumeUrl = 'https://drive.google.com/file/d/1ta1IVK0zouuPvf9nJtzRBGdomF2BWwQl/view?usp=sharing';
+
+  const handleDownloadClick = () => {
+    window.open(resumeUrl, '_blank');
+  }
     return (
         <li className={`l-section section ${active}`}>
         <div className="contact">
-        {/* <div className="testing"> */}
           <div className="contact--lockup">
-            
-            
+            <button onClick={handleDownloadClick} style={{zIndex:'1'}} className="btn btn-4" id='resume'>Download Resume</button>
             <Socials />
             <ContactForm />
             <Map />
-            {/* </div> */}
-            {/* <div className="modal">
-              <div className="modal--information">
-                <p>Pawia 5, 31-154 Kraków, Poland</p>
-                <a href="mailto:ouremail@gmail.com">ouremail@gmail.com</a>
-                <a href="tel:+148126287560">+48 12 628 75 60</a>
-              </div>
-              <ul className="modal--options">
-                <li><a href="#0">Bēhance</a></li>
-                <li><a href="#0">dribbble</a></li>
-                <li><a href="mailto:ouremail@gmail.com">Contact Us</a></li>
-              </ul>
-            </div> */}
           </div>
         </div>
       </li>
