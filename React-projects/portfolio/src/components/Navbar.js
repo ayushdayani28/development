@@ -1,5 +1,6 @@
 import React from 'react'
 import {projects} from './data'
+import Card from './Card'
 
 function Navbar(props){
     function handleClick(item){
@@ -24,6 +25,7 @@ function Search(props){
     // const [projects, setProjects] = React.useState(null)
     const [origProjects, setOrigProjects] = React.useState([])
     const [updatedProjects, setUpdatedProjects] = React.useState(null);
+    const [cards, setCards] = React.useState([])
     function handleClose(){
         props.setIsVis(0)
     }
@@ -55,26 +57,28 @@ function Search(props){
             let count = 0
             let keyWords = project.keywords.flatMap(word => word.split(' '))
             for (let w of nStr ){
-                // && !(up.includes(project.name))
-                
                 if (keyWords.includes(w)){
                     count+=1
                 }
                 if (count===len){
-                    up.push(project.name)
+                    up.push(project)
                     break
                 }
             }
         }
         
         setUpdatedProjects(prevProject => up.length === 0? prevProject: up );
-        
+
     }, [props.content]);
 
     return(
-        <div className={`outer-view ${props.isVis?'is-vis':''}`}>
+        <div className={`outer-view ${props.isVis?'is-vis':''}`} >
             {props.isVis && <button className="close" onClick={()=> handleClose()}>X</button>}
-            {props.isVis===1 && <div className="projects"><h1>{updatedProjects}</h1></div>}
+            {props.isVis===1 && <div className="projects" style={{overflow:'visible'}}>
+                <Card 
+                    projects = {updatedProjects}
+                />
+                </div>}
         </div>
     )
 }

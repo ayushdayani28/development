@@ -55,21 +55,24 @@ body{
 
 .text{display:flex; color:white; z-index:10; background-color: blue; top: 0%;}
 .close{
-  position: absolute;
-  top:-5vh;
-  left:132.5vw;
+  position: relative;
+  top:5vh;
+  /* left:132.5vw; */
+  left:95vw;
   /* top:1000px;
   left:-80px; */
-
 }
 
 .projects{
-  position: absolute;
-  top:0;
-  left:45vw;
+  position: relative;
+
+  top:10vh;
+  left:0vw;
+  width:100%;
+  height:100%;
 }
 
-.outer-view{position:relative;top:-90%;left:-40%;width: 100%; max-width:100vw; max-height:100vh,translateY(-150%);margin:0;padding:0;list-style:none;visibility:hidden;transition:visibility 0s .2s}
+.outer-view{position:absolute;top:0%;left:0%;width: 100%; max-width:100vw; max-height:100vh,translateY(-150%);visibility:hidden;transition:visibility 0s .2s}
 .outer-view.is-vis{visibility:visible}
 
 .outer-view--return{
@@ -1438,6 +1441,73 @@ form.show {
   font-family: JetBrainsMono;
   color:white;
   margin-top: 10px;
+}
+
+/* ########################################################################################################################################################################################## */
+.card{
+  width: 471px;
+  height: 168px;
+  font-size: 12px;
+  flex: 0 0 auto;         /* ADD */
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  margin: 0px auto 36px;
+  position: relative;  
+  z-index:1;
+  
+}
+
+.card--image{
+  display: flex;
+  object-fit: cover;
+  width: 125px;
+  height: 168px;
+  border-radius: 5px;
+  margin-bottom: 9px;
+}
+
+#details{
+  display: block;
+  margin-left: 20px;
+}
+
+#place{
+  width: 326px;
+  /* height: 40px; */
+  margin-bottom:15px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+
+  color: white;
+}
+
+#duration{
+  width: 319px;
+  /* height: 11px; */
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10.24px;
+  line-height: 12px;
+
+  color: white;
+}
+
+#desc{
+  width: 326px;
+  height: 45px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 150%;
+  /* or 15px */
+  color: white;
 }
     
 /* ************************************************************************* */

@@ -244,27 +244,45 @@ const learn ={
 }
 
 const projects = [
-    {name:'Kedro', keywords:['python', 'AWS', 'kedro', 'hadoop', 'pyspark', 'docker', 'guidewire','sql', 'redshift','pipeline', 'data engineering', 'machine learning engineer','dag',]
-    ,desc:'', tech:['python', 'SQL', 'AWS', 'kedro', 'pyspark', 'hadoop', 'Redshift'], duration:'May/22 - Aug/22', association:'Guidewire Software', img:'', projectLink:''},
 
-    {name:'Poverty UN SDG', keywords:['python', 'Apache', 'GCP', 'google cloud platform', 'hadoop', 'pyspark', 'stony brook university SBU', 'pipeline', 'image processing', 'distributed tensorflow', 'ARIMA', 'data engineering', 'machine learning engineer','UN SDG united nations sustainable development goals poverty', 'prediction', 'time series analysis', 'analysis', 'GIS geographical information system', 'satellite image']
-    ,desc:'', tech:['python','pyspark', 'Apache Hadoop', 'GCP', 'Tensorflow', 'GIS', 'Tensorflow'], duration:'Apr/22 - May/22', association:'SBU: Big Data Analytics', img:'', projectLink:''},
+    {name:'Kedro', keywords:['python', 'AWS', 'kedro', 'hadoop', 'pyspark', 'docker', 'guidewire software internship','sql', 'redshift','pipeline', 'data engineering', 'machine learning engineer','dag',]
+    ,desc:'', tech:['Python', 'SQL', 'AWS', 'kedro', 'pyspark', 'Apache Hadoop', 'Redshift'], duration:'May/22 - Aug/22', association:'Guidewire Software', img:'', projectLink:''},
+
+    {name:'Poverty UN SDG', keywords:['Python', 'Apache', 'GCP', 'google cloud platform', 'hadoop', 'pyspark', 'stony brook university SBU', 'pipeline', 'image processing', 'distributed tensorflow', 'ARIMA', 'data engineering', 'machine learning engineer','UN SDG united nations sustainable development goals poverty', 'prediction', 'time series analysis', 'analysis', 'GIS geographical information system', 'satellite image']
+    ,desc:'', tech:['Python','pyspark', 'Apache Hadoop', 'GCP', 'Tensorflow', 'GIS', 'Tensorflow'], duration:'Apr/22 - May/22', association:'SBU: Big Data Analytics', img:'', projectLink:''},
     
-    {name:'Bio-Medical Imaging', keywords:['Bio Medical Imaging','python', 'postgres', 'hadoop', 'spatial analysis', 'sql', 'redshift','pipeline', 'data engineering', 'machine learning engineer','dag',]
-    ,desc:'', tech:['python', 'postgres', 'kedro', 'pyspark', 'hadoop', 'Redshift'], duration:'May/22 - Aug/22', association:'Guidewire Software', img:'', projectLink:''},
+    {name:'Bio-Medical Imaging', keywords:['Bio Medical Imaging','Python', 'postgres', 'hadoop', 'spatial analysis queries', 'sql', 'big data analysis computation', 'indexing', 'Stony Brook University sbu']
+    ,desc:'', tech:['Python', 'postgres', 'pyspark', 'Apache Spark', 'Apache Hadoop'], duration:'Jan/22 - Dec/22', association:'SBU: Advanced Project', img:'', projectLink:'Private Project'},
     
-    // {name:'Kedro', keywords:['python', 'AWS', 'kedro', 'hadoop', 'pyspark', 'docker', 'guidewire','sql', 'redshift','pipeline', 'data engineering', 'machine learning engineer','dag',]
-    // ,desc:'', tech:['python', 'SQL', 'AWS', 'kedro', 'pyspark', 'hadoop', 'Redshift'], duration:'May/22 - Aug/22', association:'Guidewire Software', img:'', projectLink:''},
+    {name:'US Covid Vaccination Analysis', keywords:['Python', 'Data Science','pipeline', 'data engineering', 'vaccination vaccine analysis', 'prediction', 'machine learning', 'visualization', 'scikit learn matplotlib pandas numpy', 'feature engineering']
+    ,desc:'', tech:['Python', 'Data Science and ML Libraries', 'Jupyter', 'visualization Tools & techniques'], duration:'Aug/21 - Dec/21', association:'SBU: Data Science', img:'', projectLink:''},
     
-    // {name:'Kedro', keywords:['python', 'AWS', 'kedro', 'hadoop', 'pyspark', 'docker', 'guidewire','sql', 'redshift','pipeline', 'data engineering', 'machine learning engineer','dag',]
-    // ,desc:'', tech:['python', 'SQL', 'AWS', 'kedro', 'pyspark', 'hadoop', 'Redshift'], duration:'May/22 - Aug/22', association:'Guidewire Software', img:'', projectLink:''},
+    {name:'DiemBFT Consensus & Twins Testing', keywords:['Python', 'Distributed Systems', 'State machine replication', 'Stony Brook University SBU', 'dist algo distalgo', 'fault tolerant', 'consensus', 'ledger', 'twin bft twinbft',]
+    ,desc:'', tech:['Distributed Systems', 'State Machine Replication', 'Python','DistAlgo'], duration:'Aug/21 - Dec/21', association:'SBU: Distributed Systems', img:'', projectLink:''},
     
-    // {name:'Kedro', keywords:['python', 'AWS', 'kedro', 'hadoop', 'pyspark', 'docker', 'guidewire','sql', 'redshift','pipeline', 'data engineering', 'machine learning engineer','dag',]
-    // ,desc:'', tech:['python', 'SQL', 'AWS', 'kedro', 'pyspark', 'hadoop', 'Redshift'], duration:'May/22 - Aug/22', association:'Guidewire Software', img:'', projectLink:''},
+    {name:'FarmShield', keywords:['Python', 'c++', 'arduino', 'iot', 'android programming', 'Gujarat Technological University', 'gtu', 'platform']
+    ,desc:'', tech:['Python', 'C++', 'Object Oriented Programming', 'Arduino and Android Programming'], duration:'Aug/2019 - May/2020', association:'GTU: Project', img:'', projectLink:'Private Project'},
     
-    {name:'project1', keywords:['python', 'java', 'javascript', 'stony brook'], desc:'', tech:['python', 'java', 'javascript']},
-    {name:'project2', keywords:['python', 'SQL', 'javascript', 'Guidewire'], desc:'', tech:['python', 'SQL', 'javascript']},
-    {name:'project3', keywords:['python', 'SQL', 'react', 'GTU'], desc:'', tech:['python', 'SQL', 'react']},
+    {name:'iBIN', keywords:['bootstrap', 'jQuery', 'Javascript', 'php laravel framework', 'MySQL', 'Gujarat Technological University', 'gtu', 'web platform',]
+    ,desc:'', tech:['Bootstrap', 'jQuery', 'Javascript', 'Php Laravel framework', 'MySQL'], duration:'Aug/2018 - May/2019', association:'GTU: Design Engineering', img:'', projectLink:''},
+
+    {name:'Portfolio', keywords:['portfolio', 'javascript', 'react', 'scrimba', 'self learn learning projects', 'node node.js nodejs express expressjs', 'HTML', 'CSS']
+    ,desc:'', tech:['Javascript', 'React', 'HTML', 'CSS'], duration:'', association:'Self-Learning Projects', img:'', projectLink:''},
+
+    {name:'Notes App', keywords:['notes app', 'javascript', 'react', 'scrimba', 'self learn learning projects', 'HTML', 'CSS']
+    ,desc:'', tech:['Javascript', 'React', 'HTML', 'CSS'], duration:'', association:'Self-Learning Projects', img:'', projectLink:''},
+
+    {name:'Tenzies', keywords:['tenzies', 'javascript', 'react', 'scrimba', 'self learn learning projects', 'HTML', 'CSS']
+    ,desc:'', tech:['Javascript', 'React', 'HTML', 'CSS'], duration:'', association:'Self-Learning Projects', img:'', projectLink:''},
+
+    {name:'Business Card', keywords:['business card', 'javascript', 'react', 'scrimba', 'self learn learning projects', 'HTML', 'CSS']
+    ,desc:'', tech:['Javascript', 'React', 'HTML', 'CSS'], duration:'', association:'Self-Learning Projects', img:'', projectLink:''},
+
+    {name:'Travel Journal', keywords:['travel journal', 'javascript', 'react', 'scrimba', 'self learn learning projects', 'HTML', 'CSS']
+    ,desc:'', tech:['Javascript', 'React', 'HTML', 'CSS'], duration:'', association:'Self-Learning Projects', img:'', projectLink:''},
+
+    {name:'Miscellaneous', keywords:['miscellaneous', 'javascript', 'scrimba', 'self learn learning projects', 'HTML', 'CSS']
+    ,desc:'', tech:['Javascript', 'HTML', 'CSS'], duration:'', association:'Self-Learning Projects', img:'', projectLink:''},
 
 ]
 
