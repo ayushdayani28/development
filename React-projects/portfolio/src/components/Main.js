@@ -80,7 +80,7 @@ export default function Main(props){
     return (
         <div  className={`perspective effect-rotate-left perspective--modalview ${isVis===0?'':`${effectAnimate(isVis)}`}`}
                  onWheel={handleWheel}>
-            <div className="container" onClick={()=>{isVis === 0 ? dummy() :setVis(0)}}>
+            <div className="container" onClick={()=>{isVis === 0 ? dummy() : setVis(0)}}>
                 <div className={`outer-view--return ${isVis===1?'is-vis':''}`} ></div>
                 {!isVis && <div id="viewport" className="l-viewport" >
                     <div className="l-wrapper" >
@@ -100,16 +100,17 @@ export default function Main(props){
                     </div>
                 </div>}
             </div>
-            <Search 
+            {isVis && <Search 
                 isVis={isVis}
                 setIsVis={setVis}
                 content={content}
-            />
-            <SearchBar
+            />}
+
+            {isVis && <SearchBar
                 isVis={isVis}
                 setIsVis={setVis}
                 setContent={setContent}
-            />
+            />}
         </div>
     )
 }

@@ -21,7 +21,7 @@ export default function Card(props){
         :prev)    
     }, [props.projects])
     return (
-        <div>
+        <div className='project-grid'>
             {cards}
         </div>
     )

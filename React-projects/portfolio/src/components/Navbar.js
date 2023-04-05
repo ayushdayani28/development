@@ -24,7 +24,7 @@ function Navbar(props){
 function Search(props){
     // const [projects, setProjects] = React.useState(null)
     const [origProjects, setOrigProjects] = React.useState([])
-    const [updatedProjects, setUpdatedProjects] = React.useState(null);
+    const [updatedProjects, setUpdatedProjects] = React.useState(projects);
     const [cards, setCards] = React.useState([])
     function handleClose(){
         props.setIsVis(0)
@@ -74,7 +74,7 @@ function Search(props){
     return(
         <div className={`outer-view ${props.isVis?'is-vis':''}`} >
             {props.isVis && <button className="close" onClick={()=> handleClose()}>X</button>}
-            {props.isVis===1 && <div className="projects" style={{overflow:'visible'}}>
+            {props.isVis===1 && <div className="projects">
                 <Card 
                     projects = {updatedProjects}
                 />
