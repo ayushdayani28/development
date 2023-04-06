@@ -9,7 +9,7 @@ switch($i)
      $veri='snaprapml@gmail.com';
      return($veri);
      case 2:
-         $veri='snaprap4516devs32';
+         $veri='';
 return($veri);
 
 
