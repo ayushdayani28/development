@@ -6,7 +6,7 @@ function connect($i)
 switch($i)
 {
  case 1:
-     $veri='snaprapml@gmail.com';
+     $veri='';
      return($veri);
      case 2:
          $veri='';
