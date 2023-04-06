@@ -30,6 +30,8 @@ body{
   min-height:100%;
   outline:30px solid #0f33ff;
   /* transition:transform .4s; */
+  /* -webkit-transform:translateZ(0) translateX(0) rotateY(0deg);
+  transform:translateZ(0) translateX(0) rotateY(0deg);min-height:100%;outline:30px solid #0f33ff;-webkit-transition:-webkit-transform .4s;transition:-webkit-transform .4s;transition:transform .4s;transition:transform .4s, -webkit-transform .4s */
 }
 
 .perspective{
@@ -42,13 +44,14 @@ body{
 .perspective--modalview{position:fixed;perspective:1500px}
 
 .effect-rotate-left .container{
-  
+  -webkit-transform-origin:0% 50%;-webkit-transition:-webkit-transform .4s;transition:-webkit-transform .4s;transition:transform .4s, -webkit-transform .4s;
   transform-origin:0% 50%;
   /* for older versions use webkit transform */
   transition: transform .4s;
 }
 
 .effect-rotate-left--animate .container{
+  -webkit-transform:translateZ(-500px) rotateX(90deg) translateY(-5%);
   transform:translateZ(-500px) rotateX(90deg) translateY(-5%) ;
   outline:30px solid #0f33ff
 }
@@ -1370,7 +1373,8 @@ form.show {
 /* ########################################################################################################################################################################################## */
 
 .outer-view{position:absolute;top:0%;left:0%;width: 100%; max-height:100vh,translateY(-150%);visibility:hidden;transition:visibility 0s .2s;}
-.outer-view.is-vis{visibility:visible; overflow-y: scroll; max-height: 100vh;scrollbar-width: 0; -ms-overflow-style: none; transition:visibility 1s .5s;}
+.outer-view.is-vis{visibility:visible; overflow-y: scroll; max-height: 100vh;scrollbar-width: 0; -ms-overflow-style: none; }
+/* transition:visibility 1s .5s; */
 ::-webkit-scrollbar {
   width: 0px;
   background-color: transparent;
