@@ -8,12 +8,12 @@ export default function Card(props){
                 return(
                     <div className='card' key={project.name}>
                         <img src={`${project.img}`} className="card--image" />
-                        <div>
                         <div id='details'>
-                            <h1 id="place">{project.name}</h1>
+                            {project.app ? <a href={project.app} target='_blank'><h1 id="name">{project.name}</h1></a> : <h1 id="name">{project.name}</h1>}
+                            <h3 id='association'>{project.association}</h3>
                             <h3 id="duration">{project.duration}</h3>
+                            {project.projectLink && <a href={project.projectLink} id='project-link' target='_blank'>Github</a>}
                             <p id='desc'>{project.desc}</p>
-                        </div>
                         </div>
                     </div>
                 )  

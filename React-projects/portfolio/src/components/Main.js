@@ -9,6 +9,7 @@ export default function Main(props){
     const [isVis, setIsVis] = React.useState(0);
     const [showAnimation, setShowAnimation] = React.useState(false);
     const [content, setContent] = React.useState(null);
+    const [projectSearch, setProjectSearch] = React.useState(null)
 
     React.useEffect(()=>{
         if (isVis!==0){
@@ -76,7 +77,10 @@ export default function Main(props){
     //     if (view===0){
     //     return showAnimation ? `` : ''; }
     // }
-
+    function handleProjectSearch(lang){
+        setIsVis(1)
+        setProjectSearch(lang)
+    }
     return (
         <div  className={`perspective effect-rotate-left perspective--modalview ${isVis===0?'':`${effectAnimate(isVis)}`}`}
                  onWheel={handleWheel}>
@@ -95,7 +99,8 @@ export default function Main(props){
                             
                         />}
                         <Content
-                            active={active}    
+                            active={active}
+                            projectSearch={handleProjectSearch}
                         />
                     </div>
                 </div>}
@@ -104,12 +109,15 @@ export default function Main(props){
                 isVis={isVis}
                 setIsVis={setVis}
                 content={content}
+                projectSearch={handleProjectSearch}
             />}
 
             {isVis && <SearchBar
                 isVis={isVis}
                 setIsVis={setVis}
                 setContent={setContent}
+                projectSearch={projectSearch}
+                setProjectSearch={handleProjectSearch}
             />}
         </div>
     )

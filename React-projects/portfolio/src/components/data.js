@@ -246,43 +246,90 @@ const learn ={
 const projects = [
 
     {name:'Kedro', keywords:['python', 'AWS', 'kedro', 'hadoop', 'pyspark', 'docker', 'guidewire software internship','sql', 'redshift','pipeline', 'data engineering', 'machine learning engineer','dag',]
-    ,desc:'', tech:['Python', 'SQL', 'AWS', 'kedro', 'pyspark', 'Apache Hadoop', 'Redshift'], duration:'May/22 - Aug/22', association:'Guidewire Software', img:'', projectLink:''},
+    ,desc:`Worked on transforming developed models into production-ready pipelines using Kedro framework and AWS, bringing distributed ML into action`,
+    tech:['Python', 'SQL', 'AWS', 'kedro', 'pyspark', 'Apache Hadoop', 'Redshift'], duration:'May/22 - Aug/22', association:'Guidewire Software', 
+    img:'https://opendatascience.com/wp-content/uploads/2020/08/1QgHnKMBlRKQmWemLixPt1g-640x300.png',
+    projectLink:'', app:''},
 
     {name:'Poverty UN SDG', keywords:['Python', 'Apache', 'GCP', 'google cloud platform', 'hadoop', 'pyspark', 'stony brook university SBU', 'pipeline', 'image processing', 'distributed tensorflow', 'ARIMA', 'data engineering', 'machine learning engineer','UN SDG united nations sustainable development goals poverty', 'prediction', 'time series analysis', 'analysis', 'GIS geographical information system', 'satellite image']
-    ,desc:'', tech:['Python','pyspark', 'Apache Hadoop', 'GCP', 'Tensorflow', 'GIS', 'Tensorflow'], duration:'Apr/22 - May/22', association:'SBU: Big Data Analytics', img:'', projectLink:''},
+    ,desc:`Executed Time Series Analysis on more than 50GB of Satellite Images to build inference between Night Light intensities and the Poverty rate worldwide. Implemented a Spark pipeline to execute feature engineering, Analysis, and Prediction. Predicted poverty timeline for a few developing countries till 2030 using Distributed ARIMA
+    and TensorFlow.`, 
+    tech:['Python','pyspark', 'Apache Hadoop', 'GCP', 'Tensorflow', 'GIS', 'Tensorflow'], duration:'Apr/22 - May/22', association:'SBU: Big Data Analytics', 
+    img:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Sustainable_Development_Goal_01NoPoverty.svg/1200px-Sustainable_Development_Goal_01NoPoverty.svg.png',
+    projectLink:'https://github.com/ayushdayani28/Big-data/tree/main/Poverty-SDG', app:''},
     
     {name:'Bio-Medical Imaging', keywords:['Bio Medical Imaging','Python', 'postgres', 'hadoop', 'spatial analysis queries', 'sql', 'big data analysis computation', 'indexing', 'Stony Brook University sbu']
-    ,desc:'', tech:['Python', 'postgres', 'pyspark', 'Apache Spark', 'Apache Hadoop'], duration:'Jan/22 - Dec/22', association:'SBU: Advanced Project', img:'', projectLink:'Private Project'},
+    ,desc:`Developing a library of spatial queries and analytics tools to support image analysis for understanding diseases and biomedical problems and make it scalable in
+    cloud computing environments, using Hadoop/Spark frameworks.`, 
+    tech:['Python', 'postgres', 'pyspark', 'Apache Spark', 'Apache Hadoop'], duration:'Jan/22 - Dec/22', association:'SBU: Advanced Project', 
+    img:'https://d3evp8qu4tjncp.cloudfront.net/hubmap-person-and-text-logo.png', projectLink:'Private Project', app:''},
     
     {name:'US Covid Vaccination Analysis', keywords:['Python', 'Data Science','pipeline', 'data engineering', 'vaccination vaccine analysis', 'prediction', 'machine learning', 'visualization', 'scikit learn matplotlib pandas numpy', 'feature engineering']
-    ,desc:'', tech:['Python', 'Data Science and ML Libraries', 'Jupyter', 'visualization Tools & techniques'], duration:'Aug/21 - Dec/21', association:'SBU: Data Science', img:'', projectLink:''},
+    ,desc:`Analyzed the public data provided by CDC and various other govt. and non-govt organizations to gain knowledge about factors affecting the current vaccination rate
+    in the USA at the county level.`, tech:['Python', 'Data Science and ML Libraries', 'Jupyter', 'visualization Tools & techniques'], duration:'Aug/21 - Dec/21', association:'SBU: Data Science', 
+    img:'https://scwcontent.affino.com/AcuCustom/Sitename/DAM/022/data_graph__virus_Adobe.jpg', 
+    projectLink:'https://github.com/ayushdayani28/COVID19ANALYSIS', app:''},
     
     {name:'DiemBFT Consensus & Twins Testing', keywords:['Python', 'Distributed Systems', 'State machine replication', 'Stony Brook University SBU', 'dist algo distalgo', 'fault tolerant', 'consensus', 'ledger', 'twin bft twinbft',]
-    ,desc:'', tech:['Distributed Systems', 'State Machine Replication', 'Python','DistAlgo'], duration:'Aug/21 - Dec/21', association:'SBU: Distributed Systems', img:'', projectLink:''},
+    ,desc:`Implemented Facebook’s Byzantine Fault-tolerant consensus algorithm for maintaining consensus against a distributed ledger and implemented TwinBFT framework for testing safety and liveness violations.`, 
+    tech:['Distributed Systems', 'State Machine Replication', 'Python','DistAlgo'], duration:'Aug/21 - Dec/21', association:'SBU: Distributed Systems', 
+    img:'https://www.zdnet.com/a/img/resize/4cbc1afe80ddef5d21b3e11437a6fc232b7d0df2/2020/12/01/54bd16d0-199e-448d-a617-5d2e58dce674/diem.png?auto=webp&width=1280', 
+    projectLink:'https://github.com/ayushdayani28/DiemBFT', app:''},
     
     {name:'FarmShield', keywords:['Python', 'c++', 'arduino', 'iot', 'android programming', 'Gujarat Technological University', 'gtu', 'platform']
-    ,desc:'', tech:['Python', 'C++', 'Object Oriented Programming', 'Arduino and Android Programming'], duration:'Aug/2019 - May/2020', association:'GTU: Project', img:'', projectLink:'Private Project'},
+    ,desc:`A platform for farmers to digitize their fields by using IoT implementation and Android applications.`, tech:['Python', 'C++', 'Object Oriented Programming', 'Arduino and Android Programming'], duration:'Aug/2019 - May/2020', association:'GTU: Project', 
+    img:'https://www.ecomena.org/wp-content/uploads/2021/05/agricultural-apps.jpg', 
+    projectLink:'',
+    app:''},
     
     {name:'iBIN', keywords:['bootstrap', 'jQuery', 'Javascript', 'php laravel framework', 'MySQL', 'Gujarat Technological University', 'gtu', 'web platform',]
-    ,desc:'', tech:['Bootstrap', 'jQuery', 'Javascript', 'Php Laravel framework', 'MySQL'], duration:'Aug/2018 - May/2019', association:'GTU: Design Engineering', img:'', projectLink:''},
+    ,desc:`Developed a platform for enhancing the participation of people in Swachh Bharat Abhiyan (Clean India movement) by implementing a reward-based
+    theory.`, tech:['Bootstrap', 'jQuery', 'Javascript', 'Php Laravel framework', 'MySQL'], duration:'Aug/2018 - May/2019', association:'GTU: Design Engineering', 
+    img:'https://storage.ning.com/topology/rest/1.0/file/get/9615690882?profile=RESIZE_930x&width=800', 
+    projectLink:'https://github.com/ayushdayani28/iBIN',
+    app:''
+    },
 
     {name:'Portfolio', keywords:['portfolio', 'javascript', 'react', 'scrimba', 'self learn learning projects', 'node node.js nodejs express expressjs', 'HTML', 'CSS']
-    ,desc:'', tech:['Javascript', 'React', 'HTML', 'CSS'], duration:'', association:'Self-Learning Projects', img:'', projectLink:''},
+    ,desc:'Personal Portfolio website that you are currently visiting.', tech:['Javascript', 'React', 'HTML', 'CSS', 'Express', 'Node'], duration:'', association:'Self-Learning Projects', 
+    img:'https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/04/web-developer-portfolio.webp', 
+    projectLink:'https://github.com/ayushdayani28/development/tree/main/React-projects/portfolio', app:''},
 
     {name:'Notes App', keywords:['notes app', 'javascript', 'react', 'scrimba', 'self learn learning projects', 'HTML', 'CSS']
-    ,desc:'', tech:['Javascript', 'React', 'HTML', 'CSS'], duration:'', association:'Self-Learning Projects', img:'', projectLink:''},
+    ,desc:'A simple notes app for your daily work.', tech:['Javascript', 'React', 'HTML', 'CSS'], duration:'', association:'Self-Learning Projects', 
+    img:'https://assets-global.website-files.com/61a05ff14c09ecacc06eec05/61f59d9bcbc09e86950d63a2_illustration_1-3.png', 
+    projectLink:'https://github.com/ayushdayani28/development/tree/main/React-projects/notes-app',
+    app:'https://courageous-choux-98d485.netlify.app/'
+    },
 
     {name:'Tenzies', keywords:['tenzies', 'javascript', 'react', 'scrimba', 'self learn learning projects', 'HTML', 'CSS']
-    ,desc:'', tech:['Javascript', 'React', 'HTML', 'CSS'], duration:'', association:'Self-Learning Projects', img:'', projectLink:''},
+    ,desc:'Tired!, have a look at the Tenzies game', tech:['Javascript', 'React', 'HTML', 'CSS'], duration:'', association:'Self-Learning Projects', 
+    img:'https://mathequalslove.net/wp-content/uploads/2022/08/Tenzi-Dice.png.webp', 
+    projectLink:'https://github.com/ayushdayani28/development/tree/main/React-projects/tenzies', 
+    app:'https://cute-cobbler-1e01df.netlify.app/'},
 
     {name:'Business Card', keywords:['business card', 'javascript', 'react', 'scrimba', 'self learn learning projects', 'HTML', 'CSS']
-    ,desc:'', tech:['Javascript', 'React', 'HTML', 'CSS'], duration:'', association:'Self-Learning Projects', img:'', projectLink:''},
+    ,desc:'An eBusiness Card', tech:['Javascript', 'React', 'HTML', 'CSS'], duration:'', association:'Self-Learning Projects', 
+    img:'https://elegant-rolypoly-1f70ab.netlify.app/images/pp.jpg', 
+    projectLink:'https://github.com/ayushdayani28/development/tree/main/React-projects/digital-business-card',
+    app:'https://elegant-rolypoly-1f70ab.netlify.app'},
 
     {name:'Travel Journal', keywords:['travel journal', 'javascript', 'react', 'scrimba', 'self learn learning projects', 'HTML', 'CSS']
-    ,desc:'', tech:['Javascript', 'React', 'HTML', 'CSS'], duration:'', association:'Self-Learning Projects', img:'', projectLink:''},
+    ,desc:'An eTravel Journal', tech:['Javascript', 'React', 'HTML', 'CSS'], duration:'', association:'Self-Learning Projects', 
+    img:'https://i.etsystatic.com/39736762/r/il/28e120/4484535770/il_fullxfull.4484535770_cm98.jpg', 
+    projectLink:'https://github.com/ayushdayani28/development/tree/main/React-projects/travel-journal',
+    app:'https://resonant-caramel-fa5593.netlify.app/'},
+
+    {name:'Chrome Extension', keywords:['chrome extension browser', 'javascript', 'scrimba', 'self learn learning projects', 'HTML', 'CSS']
+    ,desc:'A chrome extension to save your leads or pages you visited', tech:['Javascript', 'HTML', 'CSS'], duration:'', association:'Self-Learning Projects', 
+    img:'https://www.codefuel.com/wp-content/uploads/2022/02/How-to-make-a-chrome-extention.jpg', 
+    projectLink:'https://github.com/ayushdayani28/development/tree/main/Chrome-extension',
+    app:''},
 
     {name:'Miscellaneous', keywords:['miscellaneous', 'javascript', 'scrimba', 'self learn learning projects', 'HTML', 'CSS']
-    ,desc:'', tech:['Javascript', 'HTML', 'CSS'], duration:'', association:'Self-Learning Projects', img:'', projectLink:''},
+    ,desc:'Some mini projects developed during self-learning journey', tech:['Javascript', 'HTML', 'CSS'], duration:'', association:'Self-Learning Projects', 
+    img:'https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/270701055/original/0505b96d7becbcba7e18b56eb7818ed66109b027/create-responsive-websites-in-html-css-and-javascript.png', 
+    projectLink:'https://github.com/ayushdayani28/development/', app:''},
 
 ]
 

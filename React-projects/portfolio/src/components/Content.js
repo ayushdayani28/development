@@ -12,7 +12,7 @@ export default function Content(props){
           <About active={props.active}/>
           <Education active={props.active}/>
           <Work active={props.active}/>
-          <Skills active={props.active}/>
+          <Skills active={props.active} projectSearch={props.projectSearch}/>
           <Contact active={props.active}/>
         </ul>
     )

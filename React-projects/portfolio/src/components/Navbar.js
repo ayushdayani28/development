@@ -27,6 +27,7 @@ function Search(props){
     const [updatedProjects, setUpdatedProjects] = React.useState(projects);
     const [cards, setCards] = React.useState([])
     function handleClose(){
+        props.projectSearch(null)
         props.setIsVis(0)
     }
     
@@ -51,8 +52,9 @@ function Search(props){
     
     React.useEffect(() => {
         const nStr = normalizeString(props.content);
-        const len = nStr.length
         let up = []
+        
+        const len = nStr.length
         for(let project of origProjects){
             let count = 0
             let keyWords = project.keywords.flatMap(word => word.split(' '))
@@ -66,8 +68,7 @@ function Search(props){
                 }
             }
         }
-        
-        setUpdatedProjects(prevProject => up.length === 0? prevProject: up );
+        setUpdatedProjects(prevProject => up.length === 0? nStr.length!==0?prevProject:projects : up );
 
     }, [props.content]);
 
@@ -85,17 +86,22 @@ function Search(props){
 
 function SearchBar(props){
     function handleChange(e){
-        props.setContent(e.target.value)
+        props.setProjectSearch(null)
+        setTimeout(()=>{props.setContent(e.target.value)},500)
     }
+    React.useEffect(()=>{
+        setTimeout(()=>{props.setContent(props.projectSearch)},500)
+    },[props.projectSearch])
+    // value={props.projectSearch?props.projectSearch:''}
     return (
     <>
     {props.isVis && <div className="searchBox">
-                <input className="searchInput" type="text" name="" placeholder="Search Projects ex. Python, Java, SBU" onChange={handleChange}/>
-                <button className="searchButton" href="#">
-                    <i className="material-icons">
-                        <i className="fa fa-search" aria-hidden="true"></i>
-                    </i>
-                </button>
+                        <input className="searchInput" type="text" name="" placeholder={props.projectSearch?props.projectSearch:"Search Projects ex. Python, Java, SBU"} onChange={handleChange} style={{color:'white'}} />
+                        <button className="searchButton" href="#">
+                            <i className="material-icons">
+                                <i className="fa fa-search" aria-hidden="true"></i>
+                            </i>
+                        </button>
         </div>}
     </>
     )

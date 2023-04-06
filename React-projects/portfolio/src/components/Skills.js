@@ -14,6 +14,7 @@ export default function Skills(props){
     const certiGridRef = React.useRef(null);
     const [scrollTop, setScrollTop] = React.useState(0);
     const [startY, setStartY] = React.useState(0);
+    
     const handleMouseDown = (event) => {
         setIsDragging(true);
         setStartY(event.pageY - certiGridRef.current.offsetTop);
@@ -47,7 +48,9 @@ export default function Skills(props){
                         <Certificates/>
                     </div>
                     <div id="tab3" >
-                        <TechStack/>
+                        <TechStack
+                            projectSearch={props.projectSearch}    
+                        />
                     </div>
                 </div>
             </li>
@@ -100,12 +103,16 @@ function TechStack(props){
     },150)
     }
 
+    const handleClick = (lang) =>{
+        props.projectSearch(lang)
+    }
+
     let tech = []
     for (const l in lang){
         let tmp = lang[l]['id']
         let angle = lang[l]['level']
         tech.push(<div key={tmp}  className={`skills--grid--item ${hover && tec===tmp?'circular-progress':''}`} onMouseEnter={()=>handleHover(tmp, angle)}
-             onMouseLeave={()=>handleHoverOut()} style={hover && tec===tmp?circularProgressStyles:{}}>
+             onMouseLeave={()=>handleHoverOut()} style={hover && tec===tmp?circularProgressStyles:{}} onClick={()=>handleClick(l)}>
             <img className='skills-image progress-value' src={require(`../${lang[l][hover && tec===tmp?'h':'uh']}`)} alt={l} />
         </div>)
     }
