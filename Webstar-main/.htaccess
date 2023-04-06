@@ -1,0 +1,68 @@
+php_value date.timezone 'Asia/kolkata'
+DirectoryIndex index.html login.php
+Options -Indexes
+IndexIgnore *
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME}\.php -f 
+RewriteRule ^(.*)$ $1.php
+
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+ErrorDocument 400 https://webstar.tk
+ErrorDocument 403 https://webstar.tk
+ErrorDocument 404 https://webstar.tk
+ErrorDocument 500 https://webstar.tk
+<Files "connect.php">
+require all denied
+</Files>
+<Files "admin.php">
+require all denied
+</Files>
+
+<Files "module.php">
+require all denied
+</Files>
+<Files "module-design.php">
+require all denied
+</Files>
+<Files "ip_trace.php">
+require all denied
+</Files>
+<Files "home.php">
+require all denied
+</Files>
+<Files "other_profile.php">
+require all denied
+</Files>
+<Files "own_profile.php">
+require all denied
+</Files>
+<LimitExcept GET POST>
+Deny from all
+</LimitExcept>
+<Files "config.php">
+require all denied
+</Files>
+
+<Files "module_math.php">
+require all denied
+</Files>
+
+<Files "2018.php">
+require all denied
+</Files>
+php_value post_max_size 3M
+php_value upload_max_filesize 3M
+
+
+
+# HTID:4090016: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:4090016:
+
+
