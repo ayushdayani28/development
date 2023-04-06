@@ -11,7 +11,7 @@ export default function Contact(props){
   } else {
       active = ""
   }
-  const resumeUrl = 'https://drive.google.com/file/d/1ta1IVK0zouuPvf9nJtzRBGdomF2BWwQl/view?usp=sharing';
+  const resumeUrl = 'https://drive.google.com/file/d/1Ht0jXy1DcchNL3JscpZc9byEpGL6ddmi/view?usp=sharing';
 
   const handleDownloadClick = () => {
     window.open(resumeUrl, '_blank');
