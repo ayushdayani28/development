@@ -14,6 +14,7 @@ export default function Content(props){
           <Work active={props.active}/>
           <Skills active={props.active} projectSearch={props.projectSearch}/>
           <Contact active={props.active}/>
+          <footer>© 2023, Ayush Dayani</footer>
         </ul>
     )
 }

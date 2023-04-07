@@ -67,6 +67,18 @@ const workEx = {
         'duration':'Feb 2023 - Current',
         'desg':'Volunteer Assistant @ SBU BMI lab',
         'desc':'Volunteerily assisting Prof Fusheng Wang and PhD students under him for the Bio Medical Imaging reasearch work.'
+    },
+    'vis':{
+        'comp':'VIS Technoserve Pvt. Ltd.',
+        'duration':'Aug 2020 - Jul 2021',
+        'desg':'Software Development Engineer',
+        'desc':'Worked as Software Developer for various inhouse and client projects on both front-end and back-end domain. Also worked as a data analyst where I designed and implemented a solution to manage the incoming data and performed analysis to derive various insights.'
+    },
+    'visi':{
+        'comp':'VIS Technoserve Pvt. Ltd.',
+        'duration':'May 2019 - Aug 2019',
+        'desg':'Software Development Engineer Intern',
+        'desc':'Worked on enhancing the website by adding new features to it and improving the existing functionalities.'
     }
 }
 

@@ -54,7 +54,7 @@ export default function Work(props){
         <div id="scroll-div" ref={containerRef}
             style={{
               overflowY: "auto",
-              whiteSpace: "nowrap",
+              // whiteSpace: "nowrap",
               top:"20vh",
               width:"100%",
               // height:"80%"
@@ -67,12 +67,12 @@ export default function Work(props){
           <li>
             <div className="direction-r">
               <div className="flag-wrapper">
-                <span className="flag" onMouseEnter={() => handleMouseEnter(0)} onMouseLeave={handleMouseLeave}>{workEx['gwr']['comp']}</span>
-                <span className="time-wrapper"><span className="time">{workEx['gwr']['duration']}</span></span>
+                <span className="flag" onMouseEnter={() => handleMouseEnter(0)} onMouseLeave={handleMouseLeave}>{workEx['vte']['comp']}</span>
+                <span className="time-wrapper"><span className="time">{workEx['vte']['duration']}</span></span>
               </div>
-              <div className="desg">{workEx['gwr']['desg']}</div>
+              <div className="desg">{workEx['vte']['desg']}</div>
               {isHovering && exp===0 && <div ref={effectRef} className='desc'>
-                <p>{workEx['gwr']['desc']}</p>
+                <p>{workEx['vte']['desc']}</p>
               </div>}
             </div>
           </li>
@@ -91,36 +91,36 @@ export default function Work(props){
           <li>
             <div className="direction-r">
               <div className="flag-wrapper">
-                <span className="flag" onMouseEnter={() => handleMouseEnter(2)} onMouseLeave={handleMouseLeave}>{workEx['vte']['comp']}</span>
-                <span className="time-wrapper"><span className="time">{workEx['vte']['duration']}</span></span>
+                <span className="flag" onMouseEnter={() => handleMouseEnter(2)} onMouseLeave={handleMouseLeave}>{workEx['gwr']['comp']}</span>
+                <span className="time-wrapper"><span className="time">{workEx['gwr']['duration']}</span></span>
               </div>
-              <div className="desg">{workEx['vte']['desg']}</div>
+              <div className="desg">{workEx['gwr']['desg']}</div>
               {isHovering && exp===2 && <div ref={effectRef} className={`desc`}>
-                <p>{workEx['vte']['desc']}</p>
+                <p>{workEx['gwr']['desc']}</p>
               </div>}
             </div>
           </li>
           <li>
             <div className="direction-l">
               <div className="flag-wrapper">
-                <span className="flag" onMouseEnter={() => handleMouseEnter(3)} onMouseLeave={handleMouseLeave}>{workEx['vte']['comp']}</span>
-                <span className="time-wrapper"><span className="time">{workEx['vte']['duration']}</span></span>
+                <span className="flag" onMouseEnter={() => handleMouseEnter(3)} onMouseLeave={handleMouseLeave}>{workEx['vis']['comp']}</span>
+                <span className="time-wrapper"><span className="time">{workEx['vis']['duration']}</span></span>
               </div>
-              <div className="desg">{workEx['vte']['desg']}</div>
+              <div className="desg">{workEx['vis']['desg']}</div>
               {isHovering && exp===3 && <div ref={effectRef} className={`desc`}>
-                <p>{workEx['vte']['desc']}</p>
+                <p>{workEx['vis']['desc']}</p>
               </div>}
             </div>
           </li>
           <li>
             <div className="direction-r">
               <div className="flag-wrapper">
-                <span className="flag" onMouseEnter={() => handleMouseEnter(4)} onMouseLeave={handleMouseLeave}>{workEx['vte']['comp']}</span>
-                <span className="time-wrapper"><span className="time">{workEx['vte']['duration']}</span></span>
+                <span className="flag" onMouseEnter={() => handleMouseEnter(4)} onMouseLeave={handleMouseLeave}>{workEx['visi']['comp']}</span>
+                <span className="time-wrapper"><span className="time">{workEx['visi']['duration']}</span></span>
               </div>
-              <div className="desg">{workEx['vte']['desg']}</div>
-              {isHovering && exp===4 && <div ref={effectRef} className={`desc`}>
-                <p>{workEx['vte']['desc']}</p>
+              <div className="desg">{workEx['visi']['desg']}</div>
+              {isHovering && exp===4 && <div ref={effectRef} className='desc'>
+                <p>{workEx['visi']['desc']}</p>
               </div>}
             </div>
           </li>

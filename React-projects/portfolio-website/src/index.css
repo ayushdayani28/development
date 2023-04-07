@@ -13,6 +13,7 @@
 html{font-family:sans-serif}
 body{margin: 0}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
+footer{position:absolute;color:white;bottom:0;right:0;opacity:0.5}
 [hidden],template{display:none}
 body{
   background-color:black;
@@ -392,8 +393,9 @@ margin-bottom: 0.5em;
 #scroll-div{
   position: relative;
   margin: 30px 0;
-  /* padding: 10px 0; */
   top:30vh;
+  width: 1000px;
+  overflow: hidden;
 }
 .timeline {
   position: relative;
@@ -425,7 +427,7 @@ margin-bottom: 0.5em;
 
 .timeline li {
   padding: 1em 0;
-  height: 15vh;
+  height: 14vh;
 }
 
 .timeline li:after {

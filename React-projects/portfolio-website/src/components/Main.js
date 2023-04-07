@@ -80,7 +80,7 @@ export default function Main(props){
     //     return showAnimation ? `` : ''; }
     // }
     // 
-    
+
     function dummy(){}
     function handleProjectSearch(lang){
         setIsVis(1)
@@ -107,6 +107,7 @@ export default function Main(props){
                             active={active}
                             projectSearch={handleProjectSearch}
                         />
+                        
                     </div>
                 </div>}
             </div>
@@ -124,6 +125,7 @@ export default function Main(props){
                 projectSearch={projectSearch}
                 setProjectSearch={handleProjectSearch}
             />}
+            
         </div>
     )
 }
