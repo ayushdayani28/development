@@ -6,7 +6,7 @@ export default function Learning(){
     for (const t in learn['tech']){
         const temp = learn['tech'][t]
         tList.push(<li key={temp['id']} className='c-list' style={{backgroundImage:`url(${temp['img']})`}}>
-            <a href={temp['link']} target='_blank' style={{color:`${temp['color']}`,}}><h1>{temp['course']}</h1></a>
+            <a href={temp['link']} target='_blank' style={{color:`${temp['color']}`,}} rel="noreferrer"><h1>{temp['course']}</h1></a>
             <div className='c-details'>
                 <h3>{temp['inst']}</h3>
                 <h3>{temp['pf']}</h3>
@@ -18,7 +18,7 @@ export default function Learning(){
     for (const r in learn['readings']){
         const temp = learn['readings'][r]
         rList.push(
-            <a key={temp['id']} href={temp['link']} target='_blank'>
+            <a key={temp['id']} href={temp['link']} target='_blank'  rel="noreferrer">
                 <li  className='r-list' style={{backgroundImage:`url(${temp['img']})`}}>
         </li>
         </a>)

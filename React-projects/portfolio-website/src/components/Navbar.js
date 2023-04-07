@@ -22,7 +22,6 @@ function Navbar(props){
 }
 
 function Search(props){
-    // const [projects, setProjects] = React.useState(null)
     const [origProjects, setOrigProjects] = React.useState([])
     const [updatedProjects, setUpdatedProjects] = React.useState(projects);
     function handleClose(){
@@ -47,7 +46,7 @@ function Search(props){
             keywords: project.keywords.map(key => key.toLowerCase())
                 }
             }))
-    }, [projects])
+    }, [])
     
     React.useEffect(() => {
         const nStr = normalizeString(props.content);
@@ -69,7 +68,7 @@ function Search(props){
         }
         setUpdatedProjects(prevProject => up.length === 0? nStr.length!==0?prevProject:projects : up );
 
-    }, [props.content]);
+    }, [props.content, origProjects]);
 
     return(
         <div className={`outer-view ${props.isVis?'is-vis':''}`} >
@@ -90,7 +89,7 @@ function SearchBar(props){
     }
     React.useEffect(()=>{
         setTimeout(()=>{props.setContent(props.projectSearch)},500)
-    },[props.projectSearch])
+    },[props.projectSearch, props])
     // value={props.projectSearch?props.projectSearch:''}
     return (
     <>

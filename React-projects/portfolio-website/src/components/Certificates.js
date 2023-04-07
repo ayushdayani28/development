@@ -1,14 +1,13 @@
 import React from 'react'
-import {data, certi} from './data'
+import {certi} from './data'
 import $ from 'jquery'
 export default function Certificates(){
-    let tech = []
     const [page, setPage] = React.useState(0)
     const len = certi.length
    
     const [click, setClick] = React.useState(0)
     const sliderRef = React.useRef(null)
-    const hoverRef = React.useRef(null)
+
 
 
   React.useEffect(()=>{
@@ -68,7 +67,7 @@ const handlePrevClick = (len) => {
                 <div className="slider--item-image">
                   <img src={require(`../${certi[page]['img']}`)}  alt={page}/>
                 </div>
-                {certi[page]['link'] ? <a href={certi[page]['link']} target='_blank'><h2>{certi[page]['venue']}</h2></a>: <h2>{certi[page]['venue']}</h2>}
+                {certi[page]['link'] ? <a href={certi[page]['link']} target='_blank' rel="noreferrer"><h2>{certi[page]['venue']}</h2></a>: <h2>{certi[page]['venue']}</h2>}
                 <p>{certi[page]['desc']}</p>
             </li>
           </ul>

@@ -80,6 +80,7 @@ export default function Main(props){
     //     return showAnimation ? `` : ''; }
     // }
     // 
+    
     function dummy(){}
     function handleProjectSearch(lang){
         setIsVis(1)

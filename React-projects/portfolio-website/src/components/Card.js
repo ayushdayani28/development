@@ -7,7 +7,7 @@ export default function Card(props){
             props.projects ? props.projects.map(project => {
                 return(
                     <div className='card' key={project.name}>
-                        <img src={`${project.img}`} className="card--image" />
+                        <img src={`${project.img}`} className="card--image" alt=''/>
                         <div id='details'>
                             {project.app ? <a href={project.app} target='_blank' rel="noreferrer"><h1 id="name">{project.name}</h1></a> : <h1 id="name">{project.name}</h1>}
                             <h3 id='association'>{project.association}</h3>

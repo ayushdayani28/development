@@ -12,25 +12,25 @@ export default function Socials(){
         <div className="socials">
             {/* <h1>Socials</h1> */}
             <ul id="socials-menu" >
-                <a className="menu-button icon-plus" id="open-menu" href="#socials-menu" title="Show navigation" onClick={toggleMenu} style={styles}></a>
-                <a className="menu-button icon-minus" href="#socials" title="Hide navigation" onClick={toggleMenu} style={styles}></a>
+                <a className="menu-button icon-plus" id="open-menu" href="#socials-menu" title="Show navigation" onClick={toggleMenu} style={styles} rel="noreferrer">{null}</a>
+                <a className="menu-button icon-minus" href="#socials" title="Hide navigation" onClick={toggleMenu} style={styles} rel="noreferrer">{null}</a>
                 <li className="menu-item">
-                    <a href="https://github.com/ayushdayani28" target='_blank'>
+                    <a href="https://github.com/ayushdayani28" target='_blank' rel="noreferrer">
                         <FaGithub />
                     </a>
                 </li>
                 <li className="menu-item">
-                    <a href="https://www.linkedin.com/in/28ayush" target='_blank'>
+                    <a href="https://www.linkedin.com/in/28ayush" target='_blank' rel="noreferrer">
                         <FaLinkedin />
                     </a>
                 </li>
                 <li className="menu-item">
-                    <a href="https://www.instagram.com/iamayushdayani/" target='_blank'>
+                    <a href="https://www.instagram.com/iamayushdayani/" target='_blank' rel="noreferrer">
                         <FaInstagram />
                     </a>
                 </li>
                 <li className="menu-item">
-                    <a href="https://twitter.com/ad2898_dayani" target='_blank'>
+                    <a href="https://twitter.com/ad2898_dayani" target='_blank' rel="noreferrer">
                         <FaTwitter />
                     </a>
                 </li>
