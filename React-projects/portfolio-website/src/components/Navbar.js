@@ -89,6 +89,7 @@ function SearchBar(props){
     }
     React.useEffect(()=>{
         setTimeout(()=>{props.setContent(props.projectSearch)},500)
+    // eslint-disable-next-line 
     },[props.projectSearch])
     // value={props.projectSearch?props.projectSearch:''}
     return (
