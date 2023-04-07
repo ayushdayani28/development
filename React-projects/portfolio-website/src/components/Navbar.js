@@ -89,7 +89,7 @@ function SearchBar(props){
     }
     React.useEffect(()=>{
         setTimeout(()=>{props.setContent(props.projectSearch)},500)
-    },[props.projectSearch, props])
+    },[props.projectSearch])
     // value={props.projectSearch?props.projectSearch:''}
     return (
     <>
