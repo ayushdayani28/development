@@ -1,2 +1,1 @@
-## To open the portfolio website click on : ayushdayani.com
-[here](ayushdayani.com)
+## To open the portfolio website click on : ayushdayani.com [Ayush Dayani](https://ayushdayani.com/)
