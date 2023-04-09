@@ -44,7 +44,7 @@ const data = {
         'GPA':'84%',
         "Bounds":"100%",
         'img':'https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/ab/ac/b7/abacb7c2-46eb-08ee-ca62-91e9a5ddc47d/AppIcon-DCS_Mehsana-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png',
-        'bimg':'http://uploads.edubilla.com/institution/d5/62/divine_child_school1.jpg'
+        'bimg':'https://drive.google.com/file/d/1pFS2srZsXPBhGIG3ime1OhlCeDMggNMp/view?usp=sharing'
     }
 
 }
