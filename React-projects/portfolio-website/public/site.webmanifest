@@ -1,15 +1,15 @@
 {
-  "name": "Ayush Dayani",
-  "short_name": "Portfolio",
+  "short_name": "Ayush Dayani",
+  "name": "Portfolio",
   "icons": [
     {
-      "src": "/favicon-32x32.png",
-      "sizes": "192x192",
+      "src": "favicon-32x32.png",
+      "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/png"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "start_url": ".",
   "display": "standalone",
-  "start_url": "/index.html"
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
 }
