@@ -124,6 +124,7 @@ export default function Main(props){
         <div  className={`perspective effect-flip-center perspective--modalview ${isVis===0?'':`${effectAnimate(isVis)}`}`}
                  onWheel={handleWheel} onTouchStart={onTouchStart} ref={containerRef}>
             <div className="container" onClick={()=>{isVis === 0 ? dummy() : setVis(0)}}>
+                {/* <div className={`outer-view--return ${isVis===1?'is-vis':''}`} ></div> */}
                 {!isVis && <div id="viewport" className="viewport" >
                     <div className="vp-wrapper" >
                         {active!==0 && <Header 
@@ -163,4 +164,3 @@ export default function Main(props){
     )
 }
 
-{/* <div className={`outer-view--return ${isVis===1?'is-vis':''}`} ></div> */}
