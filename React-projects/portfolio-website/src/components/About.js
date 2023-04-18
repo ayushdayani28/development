@@ -30,12 +30,12 @@ export default function About(props){
 function Typewriter({desc, period}){
     const [text, setText] = React.useState('');
     const [isDeleting, setIsDeleting] = React.useState(false);
-    // const [loopNum, setLoopNum] = React.useState(0);
+    const [loopNum, setLoopNum] = React.useState(0);
     const typingRef = React.useRef(null);
     React.useEffect(() => {
         const updateText = () => {
          
-          // const i = loopNum % desc.length;
+          const i = loopNum % desc.length;
           const fullTxt = desc[i];
     
           if (!isDeleting) {
@@ -50,7 +50,7 @@ function Typewriter({desc, period}){
           //   setTimeout(()=>{setIsDeleting(true);},5000)
           // } else if (isDeleting && text === '') {
             
-          //   setLoopNum(loopNum + 1);
+            setLoopNum(loopNum + 1);
           }
     
         };
