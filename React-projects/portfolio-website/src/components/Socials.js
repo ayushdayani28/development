@@ -7,7 +7,8 @@ export default function Socials(){
         setIsOpen(!isOpen);
         console.log('open')
     };
-    const styles={backgroundImage: `url(${require('../images/d-chain.png')})`,backgroundPosition:'center',  backgroundSize:100, backgroundRepeat:'no-repeat', backgroundColor:'black', outline:'1px solid white' }
+    // backgroundImage: `url(${require('../images/d-chain.png')})`,backgroundPosition:'center',  backgroundSize:100, backgroundRepeat:'no-repeat', backgroundColor:'black', outline:'1px solid white' 
+    const styles={}
     return(
         <div className="socials">
             {/* <h1>Socials</h1> */}
