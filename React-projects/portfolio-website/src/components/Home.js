@@ -13,7 +13,6 @@ export default function Home(props){
    // console.log(active)
     return (
         <li className={`l-section section ${active}`}>
-          
           <div className="title">
             <h3 id="hello">Hello I'm</h3>
             <h1 className='name'>Ayush Dayani</h1>

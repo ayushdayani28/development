@@ -38,18 +38,19 @@ function Typewriter({desc, period}){
           const i = loopNum % desc.length;
           const fullTxt = desc[i];
     
-          if (isDeleting) {
-            setText(fullTxt.substring(0, text.length - 1));
-          } else {
-            setText(fullTxt.substring(0, text.length + 1));
-          }
+          if (!isDeleting) {
+              setText(fullTxt.substring(0, text.length + 1));
+            }
+            //  else {
+              //   setText(fullTxt.substring(0, text.length - 1));
+              // }
     
           if (!isDeleting && text === fullTxt) {
+            setIsDeleting(true);
+          //   setTimeout(()=>{setIsDeleting(true);},5000)
+          // } else if (isDeleting && text === '') {
             
-            setTimeout(()=>{setIsDeleting(true);},5000)
-          } else if (isDeleting && text === '') {
-            setIsDeleting(false);
-            setLoopNum(loopNum + 1);
+          //   setLoopNum(loopNum + 1);
           }
     
         };

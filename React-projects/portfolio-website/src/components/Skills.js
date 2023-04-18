@@ -10,33 +10,7 @@ export default function Skills(props){
     } else {
         active = ""
     }
-    const [isDragging, setIsDragging] = React.useState(false);
-    const certiGridRef = React.useRef(null);
-    const [scrollTop, setScrollTop] = React.useState(0);
-    const [startY, setStartY] = React.useState(0);
-    
-    const handleMouseDown = (event) => {
-        setIsDragging(true);
-        setStartY(event.pageY - certiGridRef.current.offsetTop);
-        setScrollTop(certiGridRef.current.scrollTop);
-      };
-    
-    const handleMouseMove = (event) => {
-    if (isDragging) {
-        const y = event.pageY - certiGridRef.current.offsetTop;
-        const walk = (y - startY) * 3;
-        certiGridRef.current.scrollTop = scrollTop - walk;
-    }
-    };
-    
-    const handleMouseUp = () => {
-        setIsDragging(false);
-    };
-
-    const handleWheel = (event) => {
-        // event.preventDefault()
-        certiGridRef.current.scrollTop += event.deltaX * 0.5;
-    }
+   
       return (
             <li className={`l-section section ${active}`}  >
                 <div className='skills' style={{overflow:'hidden'}}>
@@ -44,7 +18,7 @@ export default function Skills(props){
                     <div id="tab1" >
                         <Learning />
                     </div>
-                    <div id="tab2" ref={certiGridRef} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} onWheel={handleWheel}>
+                    <div id="tab2"  >
                         <Certificates/>
                     </div>
                     <div id="tab3" >
@@ -125,3 +99,31 @@ function TechStack(props){
         </div>
     )
   }
+
+   // const [isDragging, setIsDragging] = React.useState(false);
+    // const certiGridRef = React.useRef(null);
+    // const [scrollTop, setScrollTop] = React.useState(0);
+    // const [startY, setStartY] = React.useState(0);
+    
+    // const handleMouseDown = (event) => {
+    //     setIsDragging(true);
+    //     setStartY(event.pageY - certiGridRef.current.offsetTop);
+    //     setScrollTop(certiGridRef.current.scrollTop);
+    //   };
+    
+    // const handleMouseMove = (event) => {
+    // if (isDragging) {
+    //     const y = event.pageY - certiGridRef.current.offsetTop;
+    //     const walk = (y - startY) * 3;
+    //     certiGridRef.current.scrollTop = scrollTop - walk;
+    // }
+    // };
+    
+    // const handleMouseUp = () => {
+    //     setIsDragging(false);
+    // };
+    // ref={certiGridRef} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} onWheel={handleWheel}
+    // const handleWheel = (event) => {
+    //     // event.preventDefault()
+    //     certiGridRef.current.scrollTop += event.deltaX * 0.5;
+    // }

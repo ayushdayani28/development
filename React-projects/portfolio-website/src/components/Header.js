@@ -1,4 +1,3 @@
-// import React from 'react'
 import img from '../images/dark-logo-no-background.png'
 import searchIcon from '../images/dark-icons8-innovation-96.png'
 

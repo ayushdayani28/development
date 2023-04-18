@@ -50,17 +50,11 @@ const handlePrevClick = (len) => {
   };
 
 
-  // React.useEffect(()=>{
-  //   if (isHovering){
-  //   setTimeout(()=>{
-  //     $(hoverRef.current).animate({width:'85vw'},800)}
-  //   ,200)
-      
-  // }})
+
 
     return (
       <div className="certificate">
-      <h2>{certi[page]['name']}</h2>
+        <h2>{certi[page]['name']}</h2>
         <div className="certificate--lockup">
           <ul className='slider' ref={sliderRef} >
             <li className={`slider--item slider--item-center`}>
@@ -96,3 +90,11 @@ const handlePrevClick = (len) => {
     
     )
 }
+
+  // React.useEffect(()=>{
+  //   if (isHovering){
+  //   setTimeout(()=>{
+  //     $(hoverRef.current).animate({width:'85vw'},800)}
+  //   ,200)
+      
+  // }})
