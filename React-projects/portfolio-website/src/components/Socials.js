@@ -10,9 +10,10 @@ export default function Socials(){
     // backgroundImage: `url(${require('../images/d-chain.png')})`,backgroundPosition:'center',  backgroundSize:100, backgroundRepeat:'no-repeat', backgroundColor:'black', outline:'1px solid white' 
     const styles={}
     return(
+        <div className='social-container'>
         <div className="socials">
-            {/* <h1>Socials</h1> */}
             <ul id="socials-menu" >
+            {/* <h1>Socials</h1> */}
                 <a className="menu-button icon-plus" id="open-menu" href="#socials-menu" title="Show navigation" onClick={toggleMenu} style={styles} rel="noreferrer">{null}</a>
                 <a className="menu-button icon-minus" href="#socials" title="Hide navigation" onClick={toggleMenu} style={styles} rel="noreferrer">{null}</a>
                 <li className="menu-item">
@@ -36,6 +37,7 @@ export default function Socials(){
                     </a>
                 </li>
             </ul>
+        </div>
         </div>
     )
 }
